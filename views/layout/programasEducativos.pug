@@ -1,0 +1,129 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='preconnect', href='https://fonts.googleapis.com')
+    link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin='')
+    link(href='https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Titillium+Web:ital,wght@0,400;1,600&display=swap', rel='stylesheet')
+    script(src='https://kit.fontawesome.com/aa23e13e05.js', crossorigin='anonymous')
+    // CHAT TAWK.TO
+    // Start of Tawk.to Script
+    script(type='text/javascript').
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/633f604037898912e96d4940/1genovv8e';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+    // End of Tawk.to Script
+    link(rel='stylesheet', href='../CSS/progEduc.css')
+    link(rel='stylesheet', href='../CSS/normalize.css')
+    title Programas Educativos
+  body
+    header
+      nav
+        .logo
+          img(src='../Imagenes/logo-edumark.png', alt='Logo')
+          p
+            | EDU
+            span MARK
+        ul
+          li
+            a(href='../index.html') Inicio
+          li
+            a(href='../html/nosotros.html') Nosotros
+          li
+            a(href='../html/eventos.html') Eventos
+          li
+            a(href='../html/progEduc.html') Programas
+          li
+            a(href='../html/progEduc.html') Contacto
+          // <li><a href="#">Registrarse</a></li>
+        .mobile-menu-icon
+          .hamburger-menu
+            .line
+            .line
+            .line
+    .header-titulo
+      h1 TODOS LOS PROGRAMAS
+    // <div class="filtro-bar"></div>
+    .filtro-bar
+      form#formulario(action='')
+        div
+          div
+            select#button-programa.filter-select(name='buttonPrograma')
+              option(hidden='', selected='', value='') Programas
+              option(value='Curso corto') Curso corto
+              option(value='Licenciatura') Licenciaturas
+              option(value='Diplomado') Diplomados
+              option(value='Pregrado') Pregrado
+              option(value='Master') Master
+              option(value='Inglés') Ingl&eacute;s
+            select#button-pais.filter-select(name='buttonPais')
+              option(hidden='', selected='selected', value='') Pa&iacute;s
+              option(value='Australia') Australia
+              option(value='Canadá') Canad&aacute;
+              option(value='Eslovaquia') Eslovaquia
+              option(value='México') M&eacute;xico
+              option(value='Polonia') Polonia
+              option(value='Reino Unido') Reino Unido
+              option(value='República Checa') Rep&uacute;blica Checa
+              option(value='Estados Unidos') USA
+              option(value='Irlanda') Irlanda
+            input.filter-select.button-sin-borde(type='submit', value='Buscar')
+            input#limpiar.filter-select.button-sin-borde(type='button', value='Limpiar')
+    // Programas educativos
+    section.eventos
+      .eventoss
+        .cards-events
+    .sin-resultados
+    // Fin Programas educativos
+    footer
+      .content-footer
+        .left-footer.box-footer
+          .upper-footer
+            .topic-footer
+              .logo
+                img(src='../Imagenes/logo-edumark.png', alt='Logo')
+                p
+                  | EDU
+                  span MARK
+          .lower-footer
+            .topic-footer.contactame Contactanos
+            .phone
+              a(href='#')
+                i.fas.fa-phone-volume
+                | +52 7721514998
+            .email
+              a(href='#')
+                i.fas.fa-envelope
+                | abc@gmail.com
+        .middle-footer.box-footer
+          .topic-footer Ubicaci&oacute;n
+          div
+            a(href='#') Queretaro,M&eacute;xico
+          div
+            a(href='#') CDMX, M&eacute;xico
+          div
+            a(href='#') Hidalgo, M&eacute;xico
+        .right-footer.box-footer
+          .topic-footer S&iacute;guenos
+          form(action='#')
+            .media-icons
+              a(href='#')
+                i.fab.fa-facebook-f
+              a(href='#')
+                i.fab.fa-instagram
+              a(href='#')
+                i.fab.fa-twitter
+              a(href='#')
+                i.fab.fa-youtube
+      .bottom
+        p Todos los derechos reservados 2022 &copy;
+    script(src='../JS/nav-bar.js')
+    script(src='../JS/progEduc/filter.js', type='module')

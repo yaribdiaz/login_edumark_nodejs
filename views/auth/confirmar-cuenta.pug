@@ -1,0 +1,20 @@
+extends ../layout/index
+
+block contenido
+  div.contenedor-registro
+    section
+      .container
+        .user.signinBx
+          .imgBx
+            img(src='https://images.pexels.com/photos/2675061/pexels-photo-2675061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', alt='')
+          .formBx
+            form
+              h1#edumark EDU
+                span MARK 
+              h2= pagina
+
+              p(class=error ? 'mensaje-error' : 'mensaje-exito').mensaje= mensaje1  
+              p(class=error ? 'mensaje-error' : 'mensaje-exito').mensaje= mensaje2
+
+              if !error
+                a(href="/auth/login" class='mensaje-link').mensaje ¡Ya puedes iniciar sesión!

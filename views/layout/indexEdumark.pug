@@ -1,0 +1,470 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Titillium+Web:ital,wght@0,400;1,600&display=swap' rel='stylesheet')
+
+  script(src='https://kit.fontawesome.com/aa23e13e05.js' crossorigin='anonymous')
+  // ENCABEZADO PRINCIPAL
+  script(src='./JS/imports/jquery.min.js')
+  // TESTIMONIOS
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css')
+  // CHAT TAWK.TO
+  // Start of Tawk.to Script
+  script(type='text/javascript').
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/633f604037898912e96d4940/1genovv8e';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+  // End of Tawk.to Script
+  link(rel='stylesheet' href='../CSS/index.css')
+  script(src='./JS/nav-bar.js')
+  link(rel='stylesheet' href='../CSS/normalize.css')
+  title EduMark
+header
+  nav
+    .logo
+      img(src='../Imagenes/logo-edumark.png' alt='Logo')
+      p
+        | EDU
+        span MARK
+    ul
+      li
+        a(href='#') Inicio
+      li
+        a(href='./html/nosotros.html') Nosotros
+      li
+        a(href='./html/eventos.html') Eventos
+      li
+        a(href='./html/progEduc.html') Programas
+      li
+        a(href='./html/progEduc.html') Contacto
+      // <li><a href="#">Registrarse</a></li>
+    .mobile-menu-icon
+      .hamburger-menu
+        .line
+        .line
+        .line
+  // ENCABEZADO PRINCIPAL
+  section#section-1
+    .content-slider
+      input#banner1.sec-1-input(type='radio' name='banner' checked='')
+      input#banner2.sec-1-input(type='radio' name='banner')
+      input#banner3.sec-1-input(type='radio' name='banner')
+      input#banner4.sec-1-input(type='radio' name='banner')
+      .slider
+        #top-banner-1.banner
+          .banner-inner-wrapper
+            .texto-encabezado
+              h2 Programas
+              p
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat iusto minima totam ullam
+                | praesentium quis blanditiis rerum veniam veritatis debitis est asperiores quos aspernatur,
+                | odio natus? Officia corporis debitis architecto!
+              .lineas
+              .learn-more-button
+                a(href='#section-2') Ver m&aacute;s
+        #top-banner-2.banner
+          .banner-inner-wrapper
+            .texto-encabezado
+              h2 Eventos
+              p
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio et facere cum eaque fugiat voluptatem laudantium esse deleniti repellat dolores, reiciendis maxime sapiente reprehenderit ipsam, aut ut accusamus ab rerum.
+              .lineas
+              .learn-more-button
+                a(href='#section-2') Ver m&aacute;s
+        #top-banner-3.banner
+          .banner-inner-wrapper
+            .texto-encabezado
+              h2 Becas
+              p
+                | Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos sapiente ullam nam distinctio pariatur nobis fugiat eos aspernatur laborum voluptate sit cum, repellat quisquam accusantium odio dolorem placeat aliquam magnam!
+              .lineas
+              .learn-more-button
+                a(href='#section-2') Ver m&aacute;s
+        #top-banner-4.banner
+          .banner-inner-wrapper
+            .texto-encabezado
+              h2 Inscripci&oacute;n
+              p
+                | Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis consequatur magnam repudiandae! Quae neque earum delectus excepturi voluptatum! Sint natus maiores delectus? Nobis cumque laboriosam mollitia. Ratione nobis modi facilis.
+              .lineas
+              .learn-more-button
+                a(href='#section-2') Ver m&aacute;s
+      nav
+        .controls
+          label(for='banner1')
+            span.progressbar
+              span.progressbar-fill
+            span 01
+            |               Programas
+          label(for='banner2')
+            span.progressbar
+              span.progressbar-fill
+            span 02
+            |               Eventos
+          label(for='banner3')
+            span.progressbar
+              span.progressbar-fill
+            span 03
+            |               Becas
+          label(for='banner4')
+            span.progressbar
+              span.progressbar-fill
+            span 04
+            |               Inscripci&oacute;n
+// FIN ENCABEZADO PRINCIPAL
+// QUÉ ES EDUMARK
+section.que-es
+  .informacion
+    h1.titulo-section &iquest;Qu&eacute; es EduMark?
+    p
+      | Somos una agencia educativa de movilidad internacional que informa, orienta, asesora y
+      | vincula en el proceso de aplicaci&oacute;n e inscripci&oacute;n para todos los interesados en estudiar
+      | programas de Licenciatura, Posgrado, Doctorado, cursos de idiomas y cursos de verano.
+    .botones-que-es-edumark
+      a.boton(href='./html/nosotros.html') &iexcl;Con&oacute;cenos!
+// FIN QUÉ ES EDUMARK
+// PROGRAMAS EDUCATIVOS
+//
+  <section class="programas-educativos">
+  <h1>Oferta Educativa</h1>
+  <div class="hero-section">
+  <div class="card-grid">
+  <a class="card" href="#">
+  <div class="card__background" style="background-image: url(./Imagenes/students1.jpg)"></div>
+  <div class="card__content">
+  <p class="card__category">Plan Educativo</p>
+  <h3 class="card__heading">Licenciatura</h3>
+  </div>
+  </a>
+  <a class="card" href="#">
+  <div class="card__background" style="background-image: url(./Imagenes/students2.jpg)"></div>
+  <div class="card__content">
+  <p class="card__category">Plan Educativo</p>
+  <h3 class="card__heading">Curso de Verano</h3>
+  </div>
+  </a>
+  <a class="card" href="#">
+  <div class="card__background" style="background-image: url(./Imagenes/students3.jpg)"></div>
+  <div class="card__content">
+  <p class="card__category">Plan Educativo</p>
+  <h3 class="card__heading">Cursos de Inglés</h3>
+  </div>
+  </li>
+  <a class="card" href="#">
+  <div class="card__background" style="background-image: url(./Imagenes/students4.jpg)"></div>
+  <div class="card__content">
+  <p class="card__category">Plan Educativo</p>
+  <h3 class="card__heading">Posgrado</h3>
+  </div>
+  </a>
+  </div>
+  </div>
+  <div class="botones-planeducativo">
+  <a href="./html/progEduc.html" class="boton">Conocer más</a>
+  </div>
+  </section>
+section.programas-educativos
+  .programas-educativoss
+    h1.titulo-section Programas Educativos
+    .flex-texto-section
+      .texto-introductorio-section
+        p
+          | Con m&aacute;s de 3,000 programas para estudiar en el extranjero, conviviendo con personas de diferentes nacionalidades y disfrutando de la diversidad cultural.
+    .cards-programas-educativos
+      .card-programas-educativos
+        .background(style='background-image: url(../Imagenes/students1.jpg);')
+        .text
+          // <span class="featured">EVENTO</span>
+          // <span class="date"><strong>30 Septiembre</strong> 2022</span>
+          h2.title Licenciatura
+          h3.subtitle
+            | Gonsectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
+          ul.listado-evento
+            li &bull; Estudia tu programa completo
+            li &bull; Estudia con opci&oacute;n a pregrado y continuidad con la universidad
+            li &bull; En l&iacute;nea
+            li &bull; Combinado en l&iacute;nea y presencial
+          // <a href="#" class="read-now">Leer más</a>
+      .card-programas-educativos
+        .background(style='background-image: url(../Imagenes/students2.jpg);')
+        .text
+          //
+            <span class="featured">EVENTO</span>
+            <span class="date"><strong>30 Septiembre</strong> 2022</span>
+          h2.title Posgrado
+          h3.subtitle
+            | Gonsectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
+          ul.listado-evento
+            li &bull; Modalidad: presencial, en l&iacute;nea o combinado
+            li &bull; Programas de continuidad y/o vinculaci&oacute;n empresarial
+            li &bull; Enfocadas a la investigaci&oacute;n
+          // <a href="#" class="read-now">Leer más</a>
+      .card-programas-educativos
+        .background(style='background-image: url(../Imagenes/students3.jpg);')
+        .text
+          //
+            <span class="featured">EVENTO</span>
+            <span class="date"><strong>30 Septiembre</strong> 2022</span>
+          h2.title Cursos de Idiomas
+          h3.subtitle
+            | Gonsectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
+          ul.listado-evento
+            li Con escuelas en el extranjero que te nivelan o preparan en idiomas como:
+            li &bull; Espa&ntilde;ol
+            li &bull; Ingl&eacute;s
+            li &bull; Franc&eacute;s
+            li &bull; Alem&aacute;n
+          // <a href="#" class="read-now">Leer más</a>
+      .card-programas-educativos
+        .background(style='background-image: url(../Imagenes/students4.jpg);')
+        .text
+          //
+            <span class="featured">EVENTO</span>
+            <span class="date"><strong>30 Septiembre</strong> 2022</span>
+          h2.title Cursos de Verano
+          h3.subtitle
+            | Gonsectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
+          ul.listado-evento
+            li
+              | &bull; Escuelas internacionales que te permiten vivir una experiencia cultural y/o acad&eacute;mica de 2 a 6 semanas.
+          // <a href="#" class="read-now">Leer más</a>
+  .botones-planeducativo
+    a.boton(href='./html/progEduc.html') Ver todos
+// PROGRAMAS EDUCATIVOS
+// NUESTROS SERVICIOS
+section.servicios
+  .cards-services
+    h1.titulo-section Nuestros Servicios
+    .flex-texto-section
+      .texto-introductorio-section
+        p
+          | Con m&aacute;s de 3,000 programas para estudiar en el extranjero, conviviendo con personas de diferentes nacionalidades y disfrutando de la diversidad cultural.
+    .services
+      .content-services.content-services-1
+        .fa-solid.fa-file-lines.logo-servicios
+        h2 Tr&aacute;mite de Documentos
+        p
+          | Lorem ipsum dolor sit amet, consectetur
+      .content-services.content-services-2
+        .fa-solid.fa-comments.logo-servicios
+        h2 Asesor&iacute;a
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing
+      .content-services.content-services-3
+        .fa-solid.fa-hotel.logo-servicios
+        h2 Alojamiento
+        p
+          | Lorem ipsum dolor sit amet, consectetur adipisicing
+      .content-services.content-services-4
+        .fa-solid.fa-building-columns.logo-servicios
+        h2 Consulta Informes de Programas
+        p
+          | Lorem ipsum dolor sit amet, consectetur
+// NUESTROS SERVICIOS
+// EVENTOS
+section.eventos
+  .eventoss
+    h1.titulo-section Eventos
+    .flex-texto-section
+      .texto-introductorio-section
+        p
+          | Conoce y &uacute;nete a nuestros pr&oacute;ximos eventos que tenemos para ti, para mantenerte al tanto dir&iacute;gete a nuestra secci&oacute;n.
+    .cards-events
+      .card-events
+        .background(style='background-image: url(../Imagenes/university1.jpg);')
+        .text
+          span.featured EVENTO
+          span.date
+            strong 30 Septiembre
+            |  2022
+          h2.title Quisque sapien velit, aliquet eget commodo
+          h3.subtitle
+            | Gonsectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
+          // <a href="#" class="read-now">Leer más</a>
+      .card-events
+        .background(style='background-image: url(../Imagenes/university2.jpg);')
+        .text
+          span.featured EVENTO
+          span.date
+            strong 30 Septiembre
+            |  2022
+          h2.title Quisque sapien velit, aliquet eget commodo
+          h3.subtitle
+            | Gonsectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
+          // <a href="#" class="read-now">Leer más</a>
+      .card-events
+        .background(style='background-image: url(../Imagenes/university4.jpg);')
+        .text
+          span.featured EVENTO
+          span.date
+            strong 30 Septiembre
+            |  2022
+          h2.title Quisque sapien velit, aliquet eget commodo
+          h3.subtitle
+            | Gonsectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
+          // <a href="#" class="read-now">Leer más</a>
+      .card-events
+        .background(style='background-image: url(.<./Imagenes/university5.jpg);')
+        .text
+          span.featured EVENTO
+          span.date
+            strong 30 Septiembre
+            |  2022
+          h2.title Quisque sapien velit, aliquet eget commodo
+          h3.subtitle
+            | Gonsectetur adipiscing elit. Quisque sapien velit, aliquet eget commodo nec, auctor a sapien.
+          // <a href="#" class="read-now">Leer más</a>
+  .botones-planeducativo
+    a.boton(href='./html/eventos.html') Eventos
+// FIN EVENTOS
+// TESTIMONIOS
+section.container-testimonios
+  .flex-texto-section
+    .texto-introductorio-section
+      p &iquest;Qu&eacute; es lo que nuestros usuarios piensan de nosotros?
+  .container-testimonial
+    .row-testimonial
+      .col-md-12
+        #testimonial-slider.owl-carousel
+          .testimonial
+            .testimonial-content
+              .testimonial-icon
+                i.fa.fa-quote-left
+              p.description
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+            h3.title John
+            span.post Programa
+          .testimonial
+            .testimonial-content
+              .testimonial-icon
+                i.fa.fa-quote-left
+              p.description
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+            h3.title Kelle
+            span.post Programa
+          .testimonial
+            .testimonial-content
+              .testimonial-icon
+                i.fa.fa-quote-left
+              p.description
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+            h3.title Steven
+            span.post Programa
+          .testimonial
+            .testimonial-content
+              .testimonial-icon
+                i.fa.fa-quote-left
+              p.description
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum dolor sit amet eros imperdiet, sit amet hendrerit nisi vehicula.
+            h3.title Peter
+            span.post Programa
+// FIN TESTIMONIOS
+// PARTNERS LOGOS
+section.partners
+  .slider-partners
+    .slide-track-partners
+      .slide-partners
+        img(src='../Imagenes/partners/beca3-removebg-preview.png' alt='')
+      .slide-partners
+        img(src='../Imagenes/partners/partnerBecaFund.png' alt='')
+      .slide-partners
+        img(src='../Imagenes/partners/partnerBecasHonduras.png' alt='')
+      .slide-partners
+        img(src='../Imagenes/partners/PartnerbecasSantander.png' alt='')
+      .slide-partners
+        img(src='../Imagenes/partners/partnerFiderH.png' alt='')
+      .slide-partners
+        img(src='../Imagenes/partners/partnerHondufuturo.png' alt='')
+      .slide-partners
+        img(src='../Imagenes/partners/PartnerLaudex.png' alt='')
+      .slide-partners
+        img(src='../Imagenes/partners/partnerPronabes-removebg-preview.png' alt='')
+      .slide-partners
+        img(src='../Imagenes/partners/beca3-removebg-preview.png' alt='')
+      .slide-partners
+        img(src='../Imagenes/partners/partnerBecaFund.png' alt='')
+      .slide-partners
+        img(src='../Imagenes/partners/partnerBecasHonduras.png' alt='')
+      .slide-partners
+        img(src='./Imagenes/partners/PartnerbecasSantander.png' alt='')
+      .slide-partners
+        img(src='./Imagenes/partners/partnerFiderH.png' alt='')
+      .slide-partners
+        img(src='./Imagenes/partners/partnerHondufuturo.png' alt='')
+      .slide-partners
+        img(src='./Imagenes/partners/PartnerLaudex.png' alt='')
+      .slide-partners
+        img(src='../Imagenes/partners/partnerPronabes-removebg-preview.png' alt='')
+// PARTNERS LOGOS
+// PIE DE PAGINA
+footer
+  .content-footer
+    .left-footer.box-footer
+      .upper-footer
+        .topic-footer
+          .logo-footer
+            p
+              | EDU
+              span MARK
+        p
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nobis quas expedita qui quae dolorem
+          | officia
+          | doloribus doloremque natus molestiae atque iste suscipit fuga quos quibusdam maxime animi, dolorum labore.
+      .lower-footer
+        .topic-footer.contactame Contactanos
+        .phone
+          a(href='#')
+            i.fas.fa-phone-volume
+            | +52 7721514998
+        .email
+          a(href='#')
+            i.fas.fa-envelope
+            | abc@gmail.com
+    .middle-footer.box-footer
+      .topic-footer Ubicaci&oacute;n
+      div
+        a(href='#') Queretaro,M&eacute;xico
+      div
+        a(href='#') CDMX, M&eacute;xico
+      div
+        a(href='#') Hidalgo, M&eacute;xico
+    .right-footer.box-footer
+      .topic-footer S&iacute;guenos
+      //
+        <div class="topic-footer">Suscríbete</div>
+        <form action="#">
+        <input type="text" placeholder="Correo electrónico">
+        <input type="submit" name="" value="Enviar">
+      .media-icons
+        a(href='#')
+          i.fab.fa-facebook-f
+        a(href='#')
+          i.fab.fa-instagram
+        a(href='#')
+          i.fa-brands.fa-linkedin-in
+        a(href='#')
+          i.fab.fa-youtube
+  .bottom
+    p
+script(src='../JS/slider-principal.js')
+script(src='../JS/nav-bar.js')
+script(src='../JS/partners.js')
+// EVENTOS
+// TESTIMONIOS
+script(src='../JS/testimonios.js')
+script(type='text/javascript' src='https://code.jquery.com/jquery-1.12.0.min.js')
+script(type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js')
+// NUESTROS SERVICIOS
+script(src='../JS/servicios.js')

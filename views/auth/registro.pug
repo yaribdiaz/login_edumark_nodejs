@@ -1,0 +1,83 @@
+extends ../layout/index
+
+block contenido
+  div.contenedor-registro
+    section
+      .container
+        .user.signinBx
+          .imgBx
+            img(src='https://images.pexels.com/photos/7946121/pexels-photo-7946121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', alt='')
+          .formBx
+            form(method="POST" action="/auth/registro" noValidate)
+              input(type="hidden" name="_csrf" value= csrfToken) 
+
+              h1#edumark BAZAR
+                span APP 
+              h2= pagina
+              
+              if errores
+                div(class='errores')
+                  each error in errores
+                    p(class='texto-errores')= error.msg
+
+
+              div.elemento
+                label(for="nombre") Nombre
+                input#nombre(placeholder='Username' type='text' name='nombre' value= usuario ? usuario.nombre: '')
+              
+              div.elemento
+                label(for="email") Correo electrónico
+                input#email(placeholder='Correo electrónico' type='email' name='email' value= usuario ? usuario.email: '')
+              
+              div.elemento
+                label(for="password") Contraseña
+                input#password(placeholder='Contraseña' type='password' name='password')
+              
+              //- div.elemento
+              //-   label(for="repetir_password") Repetir contraseña
+              //-   input#repetir_password(placeholder='Repetir contraseña' type='password' name='repetir_password')
+
+              div.elemento
+                label(for="edad") Edad
+                input#edad(placeholder='Edad' type='number' name='edad' value= usuario ? usuario.edad: '')
+
+              div.elemento
+                label(for="genero") Género
+                select#genero(name='genero')
+                  option(value='', disabled='disabled', selected='selected') Elige una opcion
+                  option(value='0') Femenino
+                  option(value='1') Masculino
+
+
+              //- div.elemento
+              //-   label(for="estado") Estado
+              //-   select#estado(name='estado')
+              //-     option(value='', disabled='disabled', selected='selected') Elige una opcion
+              //-     option(value='Curso de Verano') Curso de Verano
+              //-     option(value='Curso de Ingles') Curso de Inglés
+              //-     option(value='Diplomado') Diplomado
+              //-     option(value='Grado') Grado 
+              //-     option(value='Practicas') Prácticas
+
+              //- div.elemento
+              //-   label(for="municipio") Municipio
+              //-   select#municipio(name='municipio')
+              //-     option(value='', disabled='disabled', selected='selected') Elige una opcion
+              //-     option(value='Basico') Básico
+              //-     option(value='Intermedio') Intermedio
+              //-     option(value='Avanzado') Avanzado
+
+              //- div.elemento
+              //-   label(for="ingreso") Año de Ingreso
+              //-   input#ingreso(placeholder='Año de Ingreso' type='number' name='ingreso' value= usuario ? usuario.ingreso: '')             
+
+
+              
+              
+              input(type='submit' value='Registrarse')
+              
+              p.signup ¿Ya tienes una cuenta? 
+                a(href='/auth/login')  Inicia Sesión.
+            
+              p.signup ¿Olvidaste tu contraseña? 
+                a(href='/auth/olvide-password')  Recuperar.

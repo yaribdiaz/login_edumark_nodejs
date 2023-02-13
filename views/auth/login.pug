@@ -1,0 +1,40 @@
+extends ../layout/index
+
+block contenido
+  div.contenedor-registro
+    section
+      .container
+        .user.signinBx
+          .imgBx
+            img(src='https://images.pexels.com/photos/2675061/pexels-photo-2675061.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2', alt='')
+          .formBx
+            form(method="POST" action="/auth/login" noValidate)
+              input(type="hidden" name="_csrf" value=csrfToken)
+
+              h1#edumark EDU
+                span MARK 
+              h2= pagina
+
+              if errores
+                div(class='errores')
+                  each error in errores
+                    p(class='texto-errores')= error.msg
+
+              div.elemento
+                label(for="correo") Correo electrónico
+                input#correo(placeholder='Correo electrónico' type='email' name='email' )
+
+              div.elemento
+                label(for="password") Contraseña
+                input#password(placeholder='Contraseña' type='password' name='password' )             
+
+
+              
+              
+              input(type='submit' value='Iniciar Sesión')
+              
+              p.signup ¿Aún no tienes una cuenta? 
+                a(href='/auth/registro')  Crear cuenta.
+            
+              p.signup ¿Olvidaste tu contraseña? 
+                a(href='/auth/olvide-password')  Recuperar.

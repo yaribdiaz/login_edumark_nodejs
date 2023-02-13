@@ -1,0 +1,45 @@
+
+extends ../layout/index
+block contenido
+    .titulo-section
+        h2= pagina
+
+
+    .wrapper
+        .one
+        
+        .two
+            div.imagen-perfil(style='background-image: url(/public/Imagenes/students1.jpg);')
+            
+        .four 
+            div.info-perfil 
+                .texto-nombre
+                    p=`${nombre}`
+                .texto-datos
+                    p=origen
+                    p=`${edad} años`
+    .container-secciones
+        .secciones
+            .tus-eventos 
+                h3.titulo-seccion Tus Eventos
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolorem beatae saepe quidem id quam numquam enim, aperiam dolores harum quod ullam ducimus dolor quasi sit debitis ea minima perferendis?         
+            .mensajes
+                h3.titulo-seccion Mensajes
+                p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit temporibus et corrupti maxime, hic nobis voluptates reiciendis quos recusandae in, dicta rem ab? Ad, deleniti perspiciatis non ducimus repellendus voluptates?   
+
+            script(type='text/javascript').
+                var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                (function(){
+                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                s1.async=true;
+                s1.src='https://embed.tawk.to/633f604037898912e96d4940/1genovv8e';
+                s1.charset='UTF-8';
+                s1.setAttribute('crossorigin','*');
+                s0.parentNode.insertBefore(s1,s0);
+                })();
+
+            .tus-programas
+                h3.titulo-seccion Tus Programas
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque hic temporibus blanditiis possimus dolorum eligendi quisquam repudiandae accusantium, saepe culpa reprehenderit reiciendis cum quaerat explicabo officia odit est ullam. Error!
+
+            

@@ -1,0 +1,33 @@
+{
+  "name": "edumark-nodejs",
+  "version": "1.0.0",
+  "description": "programasEducativos, educación, programas",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "keywords": [
+    "educación.",
+    "programasEducativos"
+  ],
+  "author": "Fernando Yarib Velázquez Díaz",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "csurf": "^1.11.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "nodemailer": "^6.8.0",
+    "pug": "^3.0.2",
+    "sequelize": "^6.25.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
